@@ -1,8 +1,9 @@
 @echo off
 :: dl.min.io
+
+set host=dl.min.io
 :: 设置国内地址
 set host=dl.minio.org.cn
-
 if not exist minio.exe (
 curl -o minio.exe -fL  https://%host%/server/minio/release/windows-amd64/archive/minio.RELEASE.2022-12-07T00-56-37Z
 )
